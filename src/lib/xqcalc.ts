@@ -3,7 +3,7 @@ import md5 from 'md5'
 const snType = {
   '6d2df50a': {
     match: /[0-9]{5}\/[0-9A-Z]{9}/,
-    calculator: (sn: string): string => md5(`${sn}6d2df50a-250f-4a30-a5e6-d44fb0960aa0`).slice(0, 8)
+    calculator: (sn: string) => md5(`${sn}6d2df50a-250f-4a30-a5e6-d44fb0960aa0`).slice(0, 8)
   }
 }
 
