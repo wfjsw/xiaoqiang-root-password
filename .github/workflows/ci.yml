@@ -12,11 +12,6 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: 15.x
-    - name: Checkout master
-      uses: actions/checkout@v2
-      with:
-        ref: master
-        path: main
     - name: Checkout Sources
       uses: actions/checkout@v2
       with:
@@ -27,9 +22,10 @@ jobs:
       with:
         ref: gh-pages
         path: pages
-    - name: Cleanup Remote Source Tree
+    - name: Cleanup Pages
       run: |
         cd pages
+        git checkout gh-pages
         git reset --hard GHPAGES-ROOT
         cd ..
     - name: Build dist
