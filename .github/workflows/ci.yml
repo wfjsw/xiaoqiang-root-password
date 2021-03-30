@@ -25,8 +25,7 @@ jobs:
     - name: Cleanup Pages
       run: |
         cd pages
-        git checkout gh-pages
-        git reset --hard GHPAGES-ROOT
+        git reset --hard GHPAGES-ROOT --
         cd ..
     - name: Build dist
       run: |
