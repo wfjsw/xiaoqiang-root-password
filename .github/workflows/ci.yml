@@ -32,7 +32,7 @@ jobs:
       run: |
         cd source
         yarn install
-        yarn build --mode production --dest ../pages --modern --no-unsafe-inline 
+        yarn build --mode production --dest ../pages --modern --no-clean --no-unsafe-inline 
         cd ..
     - name: Upload built pages 
       run: |
