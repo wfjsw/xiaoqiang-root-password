@@ -8,7 +8,7 @@
 </template>
 
 <script>
-import {calculateRootPassword} from '../lib/xqcalc'
+import { calculateRootPassword } from '../lib/xqcalc'
 
 export default {
   data: () => ({
